@@ -1,0 +1,461 @@
+/*font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html{
+	overflow-x: hidden;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+/*header css start*/
+header {
+	background: #f7f7f7;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #f7f7f7 !important;
+}
+.nav-item a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+    font-weight: 700;
+}
+
+.last a {
+	margin-right: 0px !important;
+}
+.navbar-nav .nav-item a{
+    position: relative;
+    margin-right: 20px;
+}
+.navbar-nav .nav-item a::before {
+	position: absolute;
+	content: '';
+	height: 4px;
+	width: 0%;
+	left: 0;
+	bottom: 0;
+	background: #d5675d;
+	transition: all 0.5s ease-in-out;
+}
+.navbar-nav .nav-item a:hover::before {
+	height: 4px;
+	width: 100%;
+	transition: all 0.5s ease-in-out;
+}
+.userImg {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+/*header css end*/
+/* Book Category Active color CSS Start */
+.active-cat-color {
+	background-color: #e85454;
+}
+/* Book Category Active color CSS End */
+/*Footer css start*/
+footer {
+	background: #252525;
+	color: #fff;
+	padding: 40px 0;
+}
+footer .library {
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+}
+
+footer .library::before {
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 30px;
+	left: 0;
+	bottom: -20px;
+	background: #839fad;
+}
+footer .about {
+	position: relative;
+	margin-top: 50px;
+}
+footer .about::before {
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 60px;
+	left: 0;
+	top: -20px;
+	background: #839fad;
+}
+footer .social_heading {
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+}
+footer .social_heading::before {
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 30px;
+	left: 0;
+	bottom: -20px;
+	background: #839fad;
+}
+
+.social a i {
+	background: #3e3e3e;
+    color: #fff;
+    padding: 8px;
+    margin-right: 12px;
+    border-radius: 6px;
+    margin-top: 40px;
+}
+.social {
+	position: relative;
+}
+.social::before {
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 70px;
+	left: 0;
+	bottom: 50px;
+	background: #839fad;
+}
+.subscribe {
+	outline: none !important;
+	border: none;
+}
+.subscribeBtn {
+	color: #fff;
+    background: #e85454;
+    padding: 10px 15px;
+    width: 100%;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+/*Footer css end*/
+/*slider start */
+.fullslider {
+	position: relative;
+	background: #aad5f6;
+}
+.slide-1 {
+	background: url('../admin/dist/img/slider/bg.jpg');
+}
+.slide-2 {
+	background: url('../admin/dist/img/slider/bg.jpg');
+}
+.slide-3 {
+	background: url('../admin/dist/img/slider/bg.jpg');
+}
+.slide {
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow-x: hidden;
+}
+.caption {
+	background: rgba(0,0,0,0.03);
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 40px 0;
+}
+.caption h3 {
+	color: #ffffff;
+	text-align: center;
+	font-size: 50px;
+	padding: 18px;
+	background: #000;
+    width: 50%;
+    margin: auto;
+}
+.caption p {
+	max-width: 600px;
+	width: 90%;
+	margin: 0px auto;
+	color: #ccc;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.5em;
+	background: #000;
+    width: 50%;
+    margin-top: 40px;
+    height: 60px;
+    padding-top: 14px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 100;
+	background: #ffffff;
+	border-radius: 50%;
+	transform: background 500ms;
+}
+.arrow img {
+	width: 50px;
+}
+.arrow:hover {
+	background: #e85454;
+}
+.l {
+	left: 30px;
+}
+.r {
+	right: 30px;
+}
+/*slider end */
+/*Main Content CSS Start*/
+.books {
+	padding: 80px 0;
+}
+.books h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 35px;
+    text-align: center;
+    font-weight: 900;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.books p {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #7f6c6c;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/*Main Content CSS End*/
+/*Category Section CSS Start*/
+.category-section {
+	position: relative;
+	list-style: none;
+	border: 1px solid #d3d3d3;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+    
+}
+.category-section::before {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 0;
+	background-color: #e85454;
+	z-index: -1;
+}
+.category-section:hover::before {
+	width: 100%;
+	height: 100%;
+}
+.category-section:hover.category-section li a {
+	color: #ffffff !important;
+}
+.category-section li a{
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	color: #000000;
+	font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.category-section:active {
+	color: #ffffff;
+	background-color: #e85454;
+}
+
+
+/*Category Section CSS End*/
+
+/*Books CSS Start index.php*/
+.shelf_no {
+	background: #000000;
+    color: #ffffff;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: 600;
+    border-radius: 3px;
+    text-align: center;
+}
+.img {
+	width: 100%;
+	height: 163px;
+}
+.book-thumbnail img {
+	max-width: 100%;
+	width: 100%;
+}
+/*Books CSS End index.php*/
+
+/*Book Detais Banner CSS Start*/
+.banner img {
+	width: 100%;
+}
+.book-details {
+	padding: 60px 0;
+    background: #f7f7f7;
+}
+.book-details img {
+	padding: 10px;
+    background: #000;
+}
+.details span {
+	background: #e46a5a;
+    padding: 1px 12px;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.book-btn {
+	position: relative;
+	overflow: hidden;
+	background: #333;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px auto
+   	transition: all 0.4s ease-in-out;
+   	z-index: 1;
+}
+.book-btn::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: -100%;
+	background: #ff0000;
+	transition: all 0.4s ease-in-out;
+	z-index: -1;
+}
+.book-btn:hover::after {
+	left: 0;
+}
+.book-btn a{
+	text-decoration: none;
+	color: #fff;
+}
+/*Book Detais Banner CSS End*/
+/*Order History CSS Start*/
+.table-action ul li {
+	list-style: none !important;
+}
+/*Order History CSS End*/
+/*FAQ Section CSS Start*/
+.FAQ {
+
+}
+.FAQ h4 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+    margin-top: 87px;
+    color: #89c5cd;
+    text-transform: uppercase;
+}
+.main-faq .card {
+	border: none !important;
+}
+.main-faq .card-header {
+	position: relative;
+	border-bottom: none !important;
+	padding: 0;
+    margin-top: 10px;
+    background: none;
+    padding: 15px 0px;
+}
+.main-faq .card-header::before {
+	position: absolute;
+	content: '\003e';
+	font-size: 30px;
+	font-weight: 600;
+    top: 25%;
+    right: 0;
+    margin-top: -11px;
+}
+.main-faq .card-header:active::before {
+	position: absolute;
+	content: '\25bc';
+	font-size: 30px;
+	font-weight: 600;
+    top: 25%;
+    right: 0;
+    margin-top: -11px;
+    z-index: 100;
+}
+
+.main-faq .card-header a {
+	text-decoration: none !important;
+	color: #000052 !important;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+    font-weight: 600;
+}
+
+.active-color {
+	background: #f7f7f7 !important;
+}
+
+/*FAQ Section CSS End*/
+
+/*Contact Section CSS Start*/
+.contact {
+	padding: 40px 0;
+}
+.contact-section span {
+	margin-right: 10px;
+}
+.contact h4 {
+	text-align: center !important;
+}
+/*Contact Section CSS End*/
+
+/*conatact section css start */
+.contact-section {
+	padding: 60px 0;
+}
+.contact-section h2 {
+	font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 16px;
+}
+.contact-section p {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+    text-align: center;
+    font-size: 18px;
+    padding: 0 70px;
+}
+.form {
+	padding-top: 20px;
+}
+/*conatact section css end*/

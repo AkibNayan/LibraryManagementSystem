@@ -1,0 +1,41 @@
+.brand-link {
+	color: #ff0000 !important;
+}
+.brand-link span {
+	color: #378e00 !important;
+}
+.card .card-body {
+	padding: 0px !important;
+}
+.card .card-body .text-danger {
+	margin-left: 5px;
+}
+/*Admin Order CSS Start*/
+.booking-form .book-btn {
+    position: relative;
+    overflow: hidden;
+    background: #333;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px auto
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+}
+.booking-form .book-btn::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: #ff0000;
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+}
+.booking-form .book-btn:hover::after {
+    left: 0;
+}
+/*Admin Order CSS End*/
